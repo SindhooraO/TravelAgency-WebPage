@@ -8,14 +8,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Body */
 body {
     background: #f9f9f9;
     color: #333;
+    margin: 10px;
 }
 
-/* Header */
 header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
     background: #004d99;
     color: white;
     padding: 15px;
@@ -28,12 +31,11 @@ header h1 {
     color: #ffcc00;
 }
 
-/* Navigation */
-nav {
+/* nav {
     background: #005bb5;
     text-align: center;
     padding: 10px;
-}
+} */
 
 nav a {
     color: white;
@@ -48,7 +50,6 @@ nav a:hover {
     color: #ffcc00;
 }
 
-/* Hero Section */
 .hero {
     background: url('image.png') no-repeat center center/cover;
     height: 80vh;
@@ -91,9 +92,9 @@ nav a:hover {
     color: white;
 }
 
-/* Sections */
+
 section {
-    max-width: 900px;
+    /* max-width: 900px; */
     margin: 50px auto;
     padding: 30px;
     background: white;
@@ -107,7 +108,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Services & Destinations */
 .service-container, .destination-container {
     display: flex;
     gap: 20px;
@@ -121,14 +121,12 @@ h2 {
     flex: 1;
 }
 
-/* Testimonials */
 #testimonials {
     background: #f0f8ff;
     padding: 40px;
     text-align: center;
 }
 
-/* Footer */
 footer {
     background: #003366;
     color: white;
@@ -136,3 +134,48 @@ footer {
     padding: 15px;
     margin-top: 50px;
 }
+
+.Register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow effect */
+    text-align: center;
+    width: 350px; 
+    margin: 50px auto;
+}
+
+.Register input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Register button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Register button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.Register button:hover {
+    background-color: #0056b3;
+}
+
