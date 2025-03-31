@@ -1,0 +1,197 @@
+.destinations {
+    display: flex;
+    justify-content: flex-start; 
+    text-align: center;
+   overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 15px;
+    padding: 13px;
+    /* width: max-content;  */
+}
+.card{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(94, 93, 93, 0.995);
+    /* border-radius: 8px; */
+    /* padding: 20px; */
+    height:400px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    /* margin: 3px; */
+
+}
+.card img{
+    height: 270px;
+    width: 300px;
+}
+.card h2{
+    font-family:cursive;
+}
+.card p{
+    color: blue;
+    text-decoration: none;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    height: 440px;
+}
+.card-btn{
+    display: none;
+    background-color: #ff000f;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 30px;
+}
+.card:hover .card-btn {
+    display: inline-block;
+}
+.collections{
+    display: flex;
+    justify-content: left;
+    gap:15px;
+}
+
+.cards{
+    box-shadow: 0 4px 8px rgba(94, 93, 93, 0.995);
+    height:400px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    color: white;
+    padding: 10px;
+    position: relative;
+text-align: center;
+transition: transform 0.3s ease-in-out;
+}
+
+.cards:hover{
+    transform: scale(1.05);
+
+}
+.cards h2{
+    position: absolute;
+    bottom:20%;
+}
+
+.cards p{
+    position: absolute;
+    bottom:10%;
+    left: 25%;
+    font-size: 18px;
+
+}
+.cards button{
+    position: absolute;
+    bottom: 3%;
+    left: 35%;
+    background-color: #ff000f;
+    color: white;
+    
+}
+.destinations-container{
+    position: relative;
+}
+
+.arrow1{
+    position: absolute;
+    top:50%;
+    left:0;
+    background-color: #ff000f;
+    color: white;
+}
+.arrow2{
+    position: absolute;
+    top:50%;
+    right:0;  
+    background-color: #ff000f;  
+    color: white;
+}
+.whyUs h1{
+text-align: center;
+color: gold;
+font-size: 26px;
+}
+.whyUs{
+box-shadow: 0px 0px 10px grey;
+background-color:  rgba(0, 0, 0, 0.637);
+border-radius: 18px;
+padding: 10px;
+}
+.cardWhy{
+    display: flex;
+justify-content: space-between;
+margin: 0px 150px ;
+
+}
+.reason{
+    box-shadow: 0px 0px 10px grey;
+    border-radius: 18px;
+    padding: 3px;
+    margin: 5px;
+}
+.reason img{
+    
+    height:200px;
+    width: 200px;
+    border-radius: 500px;
+    padding: 6px ;
+    margin-left: 22%;
+    margin-right: 22%;
+    background-color: black;
+    
+}
+.sub {
+    padding:12px 14px;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.774);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sub h1,p{
+   color:white;
+}
+.sub-btn{
+    margin: 0px 120px;
+}
+.testimonals{
+    background-color:  rgba(0, 0, 0, 0.774);
+    
+
+}
+.testimonals h1{
+    color: gold;
+text-align: center;
+font-size: 26px;
+}
+.feedback{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 150px;
+
+}
+.feedback h2{     
+    text-align: center;
+    margin: 0;
+}
+.customer-card{
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px grey;
+    color: black;
+    /* padding: 10px; */
+    width: 300px;
+    height: max-content;
+    background-color: white;
+    
+}
+.customer-card img{
+margin:3% 8%;
+}
+.customer-card p{
+    color: black;
+    padding: 0px 15px;
+}
+select{
+text-align: center;
+}
+

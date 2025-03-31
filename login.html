@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 95%;
+            padding: 10px;
+            background: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>       
+            <h2><a href="index.html" style="font-size:27px; font-weight: bold;">RoamEase</a></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <!-- <li><a href="register.html">Register</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form onsubmit="loginUser(event)">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+
+    <script>
+        function loginUser(event) {
+            event.preventDefault();
+            let loginEmail = document.getElementById("loginEmail").value;
+            let loginPassword = document.getElementById("loginPassword").value;
+
+            let storedEmail = localStorage.getItem("registeredEmail");
+            let storedPassword = localStorage.getItem("registeredPassword");
+            let storedName = localStorage.getItem("registeredName"); 
+
+            if (loginEmail === storedEmail && loginPassword === storedPassword) {
+                alert("Login successful!");
+                localStorage.setItem("loggedInUser", storedName); 
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid credentials! Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

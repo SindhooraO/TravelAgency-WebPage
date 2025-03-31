@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoamEase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="/javascript/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>       
+                <h2 ><a href="index.html" style="font-size:27px; font-weight: bold;">RoamEase</a></h2>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="package.html">Packages</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section><center>
+        <div class="hero" id="hero">
+            <h1 style="color:gold; font-weight:700; font-size: 32px;">FIND YOUR NEXT ADVENTURE</h1><br>
+            <input type="date" placeholder="Search date..." style="width: 10%;">
+            <input type="text" class="search-bar" placeholder="Search Destination..." style="width:30%;min-width: 20px;">
+            <button type="submit" class="search-button" style="width: max-content;height:45px;background-color:gold"><i class="fa fa-search"></i></button>
+            <br><br>
+<button class="explore"style="background-color: gold;">EXPLORE NOW</button>  
+</div></center>
+    </section>
+    <section class="destinations-container">
+        <h1 style="font-weight: 700;color:gold;font-family:'Times New Roman', Times, serif;font-size: 30px;"><center>POPULAR DESTINATIONS</center></h1>
+        <!-- <button class="prev" onclick="scrollLeft()">&#10094;</button> -->
+         <button class="arrow1" style="height: fit-content; width: fit-content;"><i class="fa-solid fa-less-than"></i></button>
+        <div class="destinations">
+           
+            <div class="card">
+                <img src="Images/munnar.png" alt="Munnar">
+                <h2>Munnar, Kerala</h2>
+                <p> Tea gardens, waterfalls, and Eravikulam National Park.</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            <div class="card">
+                <img src="Images/mysore.png" alt="Mysore">
+                <h2>Mysore, Karnataka</h2>
+                <p>Grand palaces and Dasara festival.</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            <div class="card">
+                <img src="Images/ooty.png" alt="Ooty">
+                <h2>Ooty, Tamil Nadu</h2>
+                <p>Botanical gardens, Nilgiri Mountain Railway, and lush hills.</p>           
+                <button class="card-btn">Explore</button>
+
+            </div>
+            <div class="card">
+                <img src="Images/coorg.png" alt="Coorg">
+                <h2>Coorg, Karnataka</h2>
+                <p>Coffee plantations, Abbey Falls, and scenic viewpoints.</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            <div class="card">
+                <img src="Images/pondicherry.png" alt="Pondicherry">
+                <h2>Pondicherry</h2>
+                <p> French colonial charm and serene beaches.</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            
+            <div class="card">
+                <img src="Images/periyar.png" alt="Periyar">
+                <h2>Periyar, Kerala</h2>
+                <p>Wildlife sanctuary and boat safari.</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            <div class="card">
+                <img src="Images/tirupati.png" alt="Tirupati">
+                <h2>Tirupati, Andhra pradesh</h2>
+                <p>Famous Venkateswara Temple.</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            
+        </div>
+        <button class="arrow2"  style="height: fit-content; width: fit-content;"><i class="fa-solid fa-greater-than"></i></button>
+        <!-- <button class="next" onclick="scrollRight()">&#10095;</button> -->
+    </section>
+
+    <section> <h1 style="color:gold;
+        font-weight: 700;
+        font-size: 27px;
+        display: flex;
+        justify-content: center;">FEATURED TRAVEL PACKAGES</h1>
+        <div class="packages">
+       <br>
+      
+       <div class="collections">
+        <div class="cards" style="background-image: url(Images/tirupati.png);background-repeat: no-repeat; background-size: cover;">
+            <h2>Tirupati Pilgrimage Package, Andhra pradesh - 2 Days </h2>
+            <!-- <h3>Famous Venkateswara Temple.</h3> -->
+            <p>₹7,500 per person</p>
+            <button class="book">Book Now</button>
+        </div>
+
+        <div class="cards" style="background-image: url(Images/munnar.png);background-repeat: no-repeat; background-size: cover;">
+            <h2>Munnar Hills Retreat, Kerala- 3 Days</h2>
+            <!-- <h3>Tea gardens, waterfalls, and Eravikulam National Park.</h3> -->
+             
+<p>₹12,000 per person </p>
+<button class="book">Book Now</button>
+
+        </div>
+        <div class="cards" style="background-image: url(Images/ooty.png);background-repeat: no-repeat; background-size: cover;">
+            <h2>Ooty & Coonoor Getaway, Tamil Nadu - 4 Days</h2>
+            <!-- <h3>Botanical gardens, Nilgiri Mountain Railway, and lush hills.</h3> -->
+<p>₹15,500 per person</p>           
+<button class="book">Book Now</button>
+</div>
+
+        <div class="cards" style="background-image: url(Images/pondicherry.png);background-repeat: no-repeat; background-size: cover;">
+            <h2>Pondicherry French Heritage Tour - 3 Days </h2>
+            <!-- <h3>Auroville, Promenade Beach, Paradise Beach</h3> -->
+<p>₹13,500 per person</p>           
+<button class="book">Book Now</button>
+</div>
+
+        <div class="cards" style="background-image: url(Images/keralaBeach.png);background-repeat: no-repeat; background-size: cover;">
+            <h2>Kerala Beach Escape (Kovalam & Varkala) - 4 Days</h2>
+            <!-- <h3>A Lighthouse Beach, Papanasam Beach, Veli Tourist Village</h3> -->
+<p>₹16,500 per person</p>           
+<button class="book">Book Now</button>
+</div>
+        </div>
+    </div>
+    </section>
+    <section class="combine" style="background-image: url(Images/image2.png);background-repeat: no-repeat; background-size: cover;">
+    <section class="whyUs" ><br>
+
+        <h1> WHY CHOOSE US?</h1>
+
+        <div class="cardWhy">
+<div class="reason" style="background-color: gold;">
+    <img src="Images/bestPrices.png" alt="Best Prices">
+    <div class="sub">    <h1>BEST PRICES</h1>
+        <p>We offer unbeatable prices on travel packages, 
+            ensuring you get the best deals without compromising on quality. 
+            Enjoy your dream vacation at the most affordable rates!</p>
+            <button class="sub-btn" style="background-color: gold;">View Deals</button>
+    </div>
+</div> 
+<div class="reason" style="background-color: rgb(0, 68, 255);">
+    <img src="Images/24-7support.png" alt="24*7 Support">
+    <div class="sub">
+        <h1>24 * 7 SUPPORT</h1>
+<p>Our dedicated support team is available round the clock to assist you with bookings, queries, and travel concerns. 
+    No matter where you are, we’re just a call or message away!</p>
+    <button class="sub-btn" style="background-color:  rgb(0, 68, 255);color: white;">Contact Us</button>
+    </div>
+</div>
+<div class="reason" style="background-color: gold;">
+    <img src="Images/support.png" alt="Trusted by thousands ">
+<div class="sub">    <h1>TRUSTED BY THOUSANDS</h1>
+    <p>Join thousands of happy travelers who have explored breathtaking destinations with us. 
+        Our customer satisfaction and positive reviews speak for our commitment to quality service.</p>
+        <button class="sub-btn" style="background-color: gold;">Read Reviews</button>
+</div>
+</div>
+
+   </div>
+
+    </section>
+    <section class="testimonals" ><br>
+
+        <h1 >WHAT OUR CUSTOMERS SAY!!</h1>
+
+        <div class="feedback">
+             <div class="customer-card">
+                <img src="Images/c1.png" alt="customer1" style="border-radius: 500px;height: 250px;width: 250px;">
+                <h2>⭐⭐⭐⭐⭐ <br>John</h2>
+                <p> I had an amazing experience booking my trip through this service. Everything was seamless, and the support team was super helpful. Highly recommend!</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            <div class="customer-card">
+                <img src="Images/c2.png" alt="customer1" style="border-radius: 500px;height: 250px;width: 250px;">
+                <h2>⭐⭐⭐⭐⭐ <br> Sophia Martinez</h2>
+                <p> Best travel deals I've ever found! The process was easy, and the destinations were breathtaking. Will book again soon!</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            <div class="customer-card">
+                <img src="Images/c3.png" alt="customer1" style="border-radius: 500px;height: 250px;width: 250px;">
+                <h2>⭐⭐⭐⭐ <br>  Emily Johnson</h2>
+                <p> Trusted by so many for a reason! The experience was smooth, affordable, and hassle-free. Definitely my go-to travel agency!</p>
+                <button class="card-btn">Explore</button>
+
+            </div>
+            
+        </div>
+    </section>
+    </section>
+   
+    <footer>
+        <div class="base">
+        <div class="bottom">
+        <h1 >RoamEase</h1>
+    </div>
+
+        <div class="images">
+            <h2 >Follow us </h2>
+
+        <img src="Images/ig.png" alt="ig" style="height: 30px;width: 30px; border-radius: 50%; ">
+        <img src="Images/fb.png" alt="ig" style="height: 30px;width: 30px; border-radius: 50%; ">
+        <img src="Images/yt.png" alt="ig" style="height: 30px;width: 30px; border-radius: 50%; ">
+    </div>
+    <div class="newsletter">
+        <h1 >NewsLetter</h1>
+    <button style="background-color: red;color: white;">Subscribe</button>
+</div>
+</div>
+        
+        <hr>
+        <p>&copy; 2025 RoamEase | All Rights Reserved</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    let loggedInUser = localStorage.getItem("loggedInUser");
+    let navList = document.querySelector("nav ul");
+
+    if (loggedInUser) {
+        navList.innerHTML = `
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="userName">${loggedInUser}</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        `;
+
+        document.getElementById("logoutBtn").addEventListener("click", function () {
+            localStorage.removeItem("loggedInUser");
+            window.location.href = "index.html";
+        });
+    }
+});
+
+    </script>
+    
+
+    
+</body>
+</html>
